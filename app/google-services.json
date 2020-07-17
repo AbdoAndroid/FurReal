@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76486363088",
+    "firebase_url": "https://ma4roo3-hesouba.firebaseio.com",
+    "project_id": "ma4roo3-hesouba",
+    "storage_bucket": "ma4roo3-hesouba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76486363088:android:72b3c3eb7448cc412e9bd5",
+        "android_client_info": {
+          "package_name": "com.example.fur_real"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76486363088-t9tif062l3rmincufheuc4230jmkmlc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsdV33v4ZULu2-TLyiNYL5gXYW4R0CBQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76486363088-t9tif062l3rmincufheuc4230jmkmlc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

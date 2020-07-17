@@ -1,0 +1,5 @@
+include ':unityLibrary-debug'
+include ':unityLibrary-debug'
+include ':unityLibrary-debug'
+include ':app'
+rootProject.name='fur_real'

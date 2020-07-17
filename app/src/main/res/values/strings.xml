@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">FurReal</string>
+    <string name="new_user">New user ?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="join_our_application_to_view_the_furnture">Join our application to view the furnture.</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="PhoneNumber">Phone</string>
+    <string name="remember_me">Remember me</string>
+    <string name="rePassword">Retype the password</string>
+    <string name="next">Next</string>
+    <string name="skip">skip</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Back</string>
+    <string name="get_started">Get Started</string>
+    <string name="search">Search</string>
+    <string name="living_room_furniture">Living room furniture</string>
+    <string name="new_product_desc">Who says furniture that feels great can\'t look great too? With Greyson you can up your home\'s style quotient while you kick back in comfort. Sleekly ..</string>
+</resources>

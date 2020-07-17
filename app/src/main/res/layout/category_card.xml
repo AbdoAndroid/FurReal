@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="230dp"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:id="@+id/iv_cat_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:gravity="fill"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_cat_name"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/living_room_furniture"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="normal"/>
+
+</LinearLayout>
