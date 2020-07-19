@@ -14,6 +14,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/lbtn"
             android:padding="10dp"
+            android:onClick="backOnClick"
             android:layout_weight="1"/>
         <TextView
             android:layout_width="0dp"
@@ -69,6 +70,7 @@
                         android:layout_weight="2"
                         android:text="@string/name"
                         android:textSize="35dp"
+                        android:autoSizeTextType="uniform"
                         android:textStyle="bold"
                         android:id="@+id/tv_item_name2"/>
                     <TextView
@@ -76,7 +78,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:text="By CB2"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp"
+                        android:autoSizeTextType="uniform"/>
                 </LinearLayout>
                 <TextView
                     android:layout_width="0dp"
@@ -164,11 +167,13 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:background="@drawable/borders"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp">
                     <TextView
@@ -179,11 +184,13 @@
                         android:background="@drawable/circles"
                         android:layout_marginStart="5dp"
                         android:text="  -  "
+                        android:enabled="false"
                         android:padding="2dp"
                         android:textSize="19dp"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:id="@+id/tv_counter"
                         android:layout_weight="1"
                         android:text="1"
                         android:gravity="center"
@@ -208,13 +215,16 @@
                 android:gravity="center">
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="58dp"
+                    android:padding="5dp"
                     android:onClick="previewOnClick"
-                    android:padding="20dp"
-                    android:text="Preview in your scene"
+                    android:layout_gravity="center"
+                    android:text="Preview in your scene "
+                    android:autoSizeTextType="uniform"
                     android:drawableRight="@drawable/camera"
                     android:background="@drawable/auth_background"
-                    android:layout_margin="30dp"/>
+                    android:layout_margin="0dp"/>
+
             </LinearLayout>
             </LinearLayout>
 

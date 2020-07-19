@@ -14,8 +14,9 @@ import com.example.fur_real.R;
 
 public class ItemActivity extends AppCompatActivity {
 
-    TextView tvName,tvPrice,tvName2,tvDecrease;
+    TextView tvName,tvPrice,tvName2,tvDecrease,tvCounter;
     ImageView ivImage;
+    private int counter =1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,7 @@ public class ItemActivity extends AppCompatActivity {
         tvName2=findViewById(R.id.tv_item_name2);
         tvPrice=findViewById(R.id.tv_item_price);
         tvDecrease=findViewById(R.id.tv_decrease);
+        tvCounter=findViewById(R.id.tv_counter);
         tvName.setText(bundle.getString("name"));
         tvName2.setText(bundle.getString("name"));
         ivImage.setImageResource(bundle.getInt("image"));
@@ -41,9 +43,22 @@ public class ItemActivity extends AppCompatActivity {
     }
 
     public void decreaseOnClick(View view) {
+        counter=Integer.parseInt(tvCounter.getText().toString());
+        counter--;
+        tvCounter.setText(String.valueOf(counter));
+        if (counter <=1){
+            view.setEnabled(false);
+        }
     }
 
     public void increaseOnClick(View view) {
+        counter=Integer.parseInt(tvCounter.getText().toString());
+        counter++;
+        tvCounter.setText(String.valueOf(counter));
+        tvDecrease.setEnabled(true);
+    }
 
+    public void backOnClick(View view) {
+        finish();
     }
 }

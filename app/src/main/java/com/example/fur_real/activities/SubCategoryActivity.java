@@ -95,6 +95,6 @@ public class SubCategoryActivity extends AppCompatActivity {
     }
 
     public void backOnClick(View view) {
-        onBackPressed();
+        finish();
     }
 }

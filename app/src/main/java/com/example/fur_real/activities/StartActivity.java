@@ -41,7 +41,11 @@ public class StartActivity extends AppCompatActivity {
         //Toast.makeText(this, userExist, Toast.LENGTH_SHORT).show();
         if (!userExist.equals("none")){
             finish();
-            startActivity(new Intent(this,IntroActivity.class));
+            if (sharedPreferences.getBoolean("visited_before",false)){
+                startActivity(new Intent(this,MainActivity.class));
+            }else {
+                startActivity(new Intent(this,IntroActivity.class));
+            }
         }
     }
 
